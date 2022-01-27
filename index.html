@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>road_mario</title>
+    <link rel="stylesheet" href="./css/road_mario.css">
+</head>
+<body>
+    
+    <div class="infinite">
+        <img src="../yash/batman/mario.gif" alt="">
+        <div class="shadow"></div>
+    </div>
+    <audio id="myAudio">
+        <source src="./sounds/super-mario-bros-4293-31967.mp3" type="audio/ogg">
+      </audio>
+      <button onclick="playAudio()" type="button">Play Audio</button>
+      <button onclick="pauseAudio()" type="button">Pause Audio</button> 
+      
+      <script>
+      var x = document.getElementById("myAudio"); 
+      
+      function playAudio() { 
+        x.play(); 
+      } 
+      
+      function pauseAudio() { 
+        x.pause(); 
+      } 
+      </script>
+</body>
+</html>
